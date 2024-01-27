@@ -7,112 +7,91 @@
 
 ## *1. Descripción del Proyecto*
 
-Proyecto individual N° 2 de la etapa de labs de la carrera de Data Science de la academia SoyHenry.
+Proyecto individual N° 2 de la etapa de labs de la carrera de Data Science de la Academia SoyHenry.
 
-El objetivo de este proyecto es desarrollar un proceso de Data Analytics y aplicar técnicas para analizar un dataset de la plataforma del Ente Nacional de Comunicaciones de la República Argentina (ENACOM).
+El **objetivo de este proyecto** es desarrollar un proceso de Data Analytics y aplicar técnicas para analizar un dataset de la plataforma del Ente Nacional de Comunicaciones de la República Argentina (ENACOM).
 
 
 ## *2. Requerimientos del Proyecto*
 
 Se deberá hacer un trabajo situándose en el rol de un Data Analyst. 
 
-En este contexto, una empresa prestadora de servicios de telecomunicaciones le encarga a usted la realización de un análisis completo que permita reconocer el comportamiento de este sector a nivel nacional. Considere que la principal actividad de la empresa es brindar acceso a internet, pero también es importante considerar el comportamiento asociado al resto de los servicios de comunicación, con el fin de orientar a la empresa en brindar una buena calidad de sus servicios, identificar oportunidades de crecimiento y poder plantear soluciones personalizadas a sus posibles clientes.
+En este contexto, una empresa prestadora de servicios de telecomunicaciones le encarga a usted la realización de un análisis completo que permita reconocer el comportamiento de este sector a nivel nacional. Considere que la **principal actividad de la empresa es brindar acceso a internet**, pero también es importante considerar el comportamiento asociado al resto de los servicios de comunicación, con el **fin de orientar a la empresa** en brindar una buena calidad de sus servicios, identificar oportunidades de crecimiento y poder plantear soluciones personalizadas a sus posibles clientes.
+
+- [Requerimientos del proyecto](https://github.com/soyHenry/PI_DA/tree/PART-TIME)
+
+- [Criterios de evaluación](https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vTV3zL1aeGRlbXkiy5012GWbDBMseA4iziMXs597TZfgaYgazjxZDx_-q6L4s9io3JW4UPHcZs_XNyz/pubhtml?pli=1#)
+
+- [Recordatorio](https://docs.google.com/document/d/1DI0ZVgHfOfjgnXGhi8jEKzwCIjtUdgRUDe-qiiGGq8E/edit#heading=h.kcc1u7vaaryt)
+
 
 ## *3. Desarrollo del Proyecto*
 
-El proyecto cuenta con las carpetas:
+El proyecto se llevó a cabo en tres etapas:
 
-- Datasets
-- Datasets_ETL
-- Imagenes
+- 1° Etapa: se realizó la extración y transformación del datasets que se descargo de la paginá del ENACOM. 
 
-Y archivos: 
+- 2° Etapa: se realizarón los análisis y gráficos de los datos.
 
-- 1_ETL.ipynb
-- 2_EDA.ipynb
-- Dashbord.pbix
-- Readme.md
+- 3° Etapa: se llevó a cabo la visualización de los datos.
 
-Breve descripción de lo desarrollados en los Notebooks: 
+El proyecto cuenta con:  
 
-**1_ETL**
+- Carpetas: Datasets, Datasets_ETL e Imágenes.
 
-A los archivos originales descargados de la plataforma del ENACOM se les realizó un EDA preliminar (Analisis Exploratorio de los Datos) y ETL (Extraccion Transformación y Carga), creando de esta forma cinco archivos .csv.
+- Archivos: 1_ETL.ipynb, 2_EDA.ipynb, Dashbord.pbix y Readme.md .
 
-**2_EDA**
+Stack tecnológico: 
 
-Usando los archivos .csv creados anteriormente se realizó un EDA, se graficaron y analizaron cada grafico (reseñas al pie de cada grafico):
+- Visual Estudio Code: procesamiento de datos.
+- Google Colab: procesamiento de datos.
+- Power BI: visualización de datos.
 
-- Acceso a internet por cada 100 hogares (Año/Accesos).
-- Acceso a internet por cada 100 hogares (Trimestre/Accesos).
-- Velocidad media de bajada de internet.
-- Rangos de velocidad de bajada de internet.
-- Velocidad de bajada "HASTA 512 kbps".
-- Velocidad de bajada "+ 512 Kbps - 1 Mbps".
-- Velocidad de bajada "+ 1 Mbps - 6 Mbps".
-- Velocidad de bajada "+ 6 Mbps - 10 Mbps".
-- Velocidad de bajada "+ 10 Mbps - 20 Mbps".
-- Velocidad de bajada "+ 20 Mbps - 30 Mbps".
-- Velocidad de bajada "+ 30 Mbps".
-- Velocidad de bajada de internet para el año 2022.
-- Tipos de conexion a internet (grafico de barras).
-- Tipos de conexion a internet (grafico de torta).
-- Tipo de conexion a internet por provincia para el año 2022.
-- Evolución del tipo de conexión a internet por año (2014 a 2022).
+## *4. Producto generado* 
 
-Breve descripción de lo desarrollados DEL Dashboard:
+Los datos análizados se los visualizó en un **Dashbord** en Power BI.
 
-**Dashbord**
+Esta disponible:
 
-En base a los archivos que se encuentran en la carpeta Datasets_ETL se desarrollo el Dashbord.
+- [Versión online](https://app.powerbi.com/view?r=eyJrIjoiYzNlNjI2OTAtY2U2Zi00NDc1LWI0ZGQtZDkwMDlmZWIwZTBiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
-En mi caso simule ser una empresa de inversiones que analiza los datos del ENACOM, para mostrar nichos de negocios con potencial de crecimientos.
-
-- Con el uso de Power BI se cargo la base de datos para ser analizada. Se empezó por relacionar los distintos dataframe por medio de la columna "Año_trimestre".
-
-- Se crearon dos indicador clave de rendimiento (KPI-Key Performance Indicator):
-     - KPI 1 = 0.02, para accesos a internet cada 100 hogares por trimestre.
-     - KPI 2 = 0.01, para velocidad meadia de internet por trimestre.
-
-- Se grafico: 
-     - Accesos a internet cada 100 hogares acumulados por trimestre por provincia desde el año 2014 al año 2023.
-     - Velocidad media de conexión a internet por trimestre por provincia desde el año 2014 al año 2023.
-     - Tipos de acceso a internet por trimestre desde el año 2014 al año 2022.
-     - Distribucion del tipo de acceso a internet actual (2022). ** Aca se muestra la oportunidad de inversion **
-
-- Se muestran las empresas involugradas en el acceso a internet satelital en Argentina (cada imagen tiene un index).
-
-- Se citan las bibliografias consultadas (cada imagen tiene un index).
+- [Formato PDF](https://github.com/Hern4nOckham/Proyecto_individualDS-2/blob/main/Dashbord.pdf)
 
 
-## *4. Datasets*
+Resumen:
+
+Se simuló ser una **consultora de Business Intelligence y expertos en tecnología** que analiza los **datos de telecomunicaciones** de la República Argentina, para mostrar nichos de mercados con potencial de crecimientos a una empresa del sector de las telecomunicaciónes cuya principal actividad es brindar acceso a internet.
+
+Se describe la situación actual de las telecomunicaciones, se plantean algunos KPI, se muestra un nicho de mercado y algunos posibles competidores del sector.
+
+<img src="Imagenes\Dashboard.jpg" width="1010" height="500">
+
+## *5. Datasets*
 
 Fueron brindados por Henry la dirección de la base de datos del ENACOM:
 
-- ENACOM. [https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/)
+- [Datasets ENACOM](https://datosabiertos.enacom.gob.ar/dashboards/20000/acceso-a-internet/)
 
-En base a los archivos originales se crearon cinco archivos en formato .csv:
 
-- 1_internet_100hogares_por_provincia.csv
-- 2_internet_rangovelocidad_velocidadm_provincia.csv
-- 3_internet_portecnologia_porlocalidad.csv
-- 4_Calendario_Fechas.csv
-- 5_internet_portecnologia_porprovincia.csv
+## *6. Concideraciones finales*
 
-## *5. Conclusíones*
-
-Durante el proceso del trabajo se afinzaron muchos conociminetos en cuanto a la limpieza de datos, su transformación, el uso de Power query, DAX y Power BI. 
+Durante el proceso del trabajo se afinzaron muchos conociminetos en cuanto a la limpieza de datos, su transformación con Python, el uso de Power query, DAX y Power BI. 
 
 En base a los datos analizados se puede concluir que en pocos trimestres se cumplen con el objetivo del KPI propuestos. 
 
 El acceso a internet cada 100 hogares y la velocidad de conexión a internet tiende a la alza. 
 
-Y que se encontro como "Oportunidad de negocio" **el servicio de internet satelital**, por lo que presenta una gran perspectiva de crecimiento en el ambito rural y agropecuario (Esto se jutifica en la presentación del dashbord).
+Y que se encontro como "Oportunidad de negocio" **el servicio de internet satelital**, por lo que presenta una gran perspectiva de crecimiento en el ambito rural y agropecuario (se jutifica en la presentación del dashbord).
 
-<img src="Imagenes\Conexion.png" width="1010" height="700">
 
-## *6. Autor*
+## *7. Autor*
 
-- **Hernán Pizarro**
-- Mail: hern4npizarro@gmail.com
-- Linkedin: [www.linkedin.com/in/hernán-pizarro-683679268](www.linkedin.com/in/hernán-pizarro-683679268)
+- **Hernán Pizarro**: hern4npizarro@gmail.com | [Linkedin](https://www.linkedin.com/in/hern%C3%A1n-pizarro-683679268/) | [GitHub](https://github.com/Hern4nOckham).
+
+## *8. Disclaimer*
+
+De parte del equipo de Henry se quiere aclarar y remarcar que los fines de los proyectos propuestos son exclusivamente pedagógicos, con el objetivo de realizar proyectos que simulen un entorno laboral, en el cual se trabajen diversas temáticas ajustadas a la realidad. 
+
+No reflejan necesariamente la filosofía y valores de la organización. Además, Henry no alienta ni tampoco recomienda a los alumnos y/o cualquier persona leyendo los repositorios (y entregas de proyectos) que tomen acciones en base a los datos que pudieran o no haber recabado. 
+
+Toda la información expuesta y resultados obtenidos en los proyectos nunca deben ser tomados en cuenta para la toma real de decisiones (especialmente en la temática de finanzas, salud, política, etc.).
